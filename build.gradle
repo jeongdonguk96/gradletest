@@ -12,6 +12,11 @@ java {
 	sourceCompatibility = '17'
 }
 
+// jar 파일명 변경
+bootJar {
+	archiveFileName = "${rootProject.name}.jar"
+}
+
 // plain.jar 생성 방지
 jar {
 	enabled = false
